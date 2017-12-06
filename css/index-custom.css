@@ -1,0 +1,64 @@
+h3 a {
+	color: black;
+}
+
+h3 a:hover {
+	color: #04B486;
+}
+
+
+.read-next {
+	padding-bottom: 7px;
+}
+
+.center-content {
+	text-align: center;
+} 
+
+.div-container {
+	display: flex;
+}
+
+.img-in-div {
+	max-height:100%; 
+	max-width:100%;
+}
+
+
+.half-div {
+	display: inline-block;
+    width: 50%;
+    float: left;
+    min-height: 100px;
+}
+
+.div-text {
+	box-sizing: border-box;
+	padding: 3px;
+	padding-top: 0;
+}
+
+.div-pic {
+	text-align: center;
+	padding: 0 2px 2px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .half-div {
+     	width: 100%;
+    }
+
+    .div-pic {
+    	padding-bottom: 20px;
+    }
+    
+    .div-text {
+     	padding: 0 0 !important;
+    }
+    
+    .div-container { flex-direction: column; }
+	
+	.div-container:nth-child(2) > .div-pic {
+		order: -1;
+	}
+}
