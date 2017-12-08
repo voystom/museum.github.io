@@ -10,6 +10,14 @@ p, td {
 	color: black;
 }
 
+.hover-line:hover {
+	text-decoration: underline;
+}
+
+.hover-line:visited {
+	text-decoration: none;
+}
+
 ul {
 	margin-bottom: 0;
 }
