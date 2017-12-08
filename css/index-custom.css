@@ -20,6 +20,11 @@
 	padding-top: 30px;
 }
 
+.auto-height {
+	max-width: 100%;
+	height: auto;
+}
+
 
 h3 a {
 	color: black;
