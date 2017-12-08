@@ -305,8 +305,8 @@ a:hover, a:focus, a:active {
   background: url(../img/logo.png) no-repeat left top;
   top: 40px;
   position: relative;
-  width: 234px;
-  height: 80px;
+  width: 117px;
+  height: 40px;
   text-indent: -999999px;
   -webkit-transition: .2s all;
   transition: .2s all;
@@ -314,7 +314,7 @@ a:hover, a:focus, a:active {
 
 @media screen and (max-width: 768px) {
   .probootstrap-navbar .navbar-brand {
-    top: 0px !important;
+    top: 5px !important;
     background-position: left 100%;
   }
 }
@@ -483,7 +483,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar.scrolled .navbar-brand {
-  top: 0px;
+  top: 10px;
   background-position: left 100%;
 }
 

@@ -34,7 +34,8 @@ gulp.task('scripts', function() {
     'js/vendor/photoswipe-ui-default.min.js',
     'js/vendor/owl.carousel.min.js',
     'js/vendor/bootstrap.min.js',
-    'js/vendor/jquery.waypoints.min.js'
+    'js/vendor/jquery.waypoints.min.js',
+    'js/lazyload.js'
     ])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('js'))
@@ -119,13 +120,13 @@ gulp.task('bs-reload', function () {
 gulp.task('browser-sync', function() {
     browserSync.init(['css/*.css', 'js/*.js'], {
         
-        proxy: 'localhost/probootstrap/resto'
+        //proxy: 'localhost/probootstrap/resto',
         /* For a static server you would use this: */
-        /*
+        
         server: {
             baseDir: './'
         }
-        */
+        
     });
 });
 

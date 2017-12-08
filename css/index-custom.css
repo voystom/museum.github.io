@@ -1,3 +1,26 @@
+.probootstrap-navbar .navbar-brand {
+	width: 234px;
+	height: 80px;
+	top: 25px;
+}
+
+.probootstrap-navbar.scrolled .navbar-brand {
+	top: 0px;
+}
+
+@media screen and (max-width:768px) {
+	.probootstrap-navbar .navbar-brand {
+		top:0px!important;
+	}
+}
+
+.probootstrap-navbar.scrolled .navbar-brand,
+.probootstrap-navbar.scrolled .navbar-nav>li>a,
+.probootstrap-navbar.scrolled .parent-nav-link-padding {
+	padding-top: 30px;
+}
+
+
 h3 a {
 	color: black;
 }
