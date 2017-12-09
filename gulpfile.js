@@ -79,7 +79,8 @@ gulp.task('sass', function () {
     .pipe(minifycss())
     .pipe(gulp.dest('css'))
     /* Reload the browser CSS after every change */
-    .pipe(reload({stream:true}));
+    .pipe(reload({stream:true}))
+    ;
 });
 
 gulp.task('merge-styles', function () {
@@ -112,16 +113,19 @@ gulp.task('merge-styles', function () {
 });
 
 /* Reload task */
+/*
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
+*/
 
 /* Prepare Browser-sync for localhost */
+/*
 gulp.task('browser-sync', function() {
     browserSync.init(['css/*.css', 'js/*.js'], {
         
         //proxy: 'localhost/probootstrap/resto',
-        /* For a static server you would use this: */
+        //For a static server you would use this:
         
         server: {
             baseDir: './'
@@ -129,15 +133,16 @@ gulp.task('browser-sync', function() {
         
     });
 });
+*/
 
 /* Watch scss, js and html files, doing different things with each. */
-gulp.task('default', ['sass', 'scripts', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'scripts' /*, 'browser-sync'*/ ], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
     /* Watch app.js file, run the scripts task on change. */
     gulp.watch(['js/custom.js'], ['minify-custom'])
     /* Watch .html files, run the bs-reload task on change. */
-    gulp.watch(['*.html'], ['bs-reload']);
+    //gulp.watch(['*.html'], ['bs-reload']);
 });
 
 gulp.task('serveprod', function() {
