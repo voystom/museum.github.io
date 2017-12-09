@@ -8,8 +8,8 @@ var notify = require('gulp-notify');
 var minifycss = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+// var browserSync = require('browser-sync');
+// var reload = browserSync.reload;
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -79,7 +79,7 @@ gulp.task('sass', function () {
     .pipe(minifycss())
     .pipe(gulp.dest('css'))
     /* Reload the browser CSS after every change */
-    .pipe(reload({stream:true}))
+    // .pipe(reload({stream:true}))
     ;
 });
 
@@ -109,7 +109,7 @@ gulp.task('merge-styles', function () {
         // .pipe(minifycss())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('css'))
-        .pipe(reload({stream:true}));
+        // .pipe(reload({stream:true}));
 });
 
 /* Reload task */
