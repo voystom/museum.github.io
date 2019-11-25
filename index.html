@@ -24,41 +24,35 @@
     <!-- Fixed navbar -->
     
     <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
-      <div class="container">
-	<div id="google_translate_element"></div>
-	<script type="text/javascript">  
-        function googleTranslateElementInit() {  
-            new google.translate.TranslateElement( 
-                {pageLanguage: 'en'},  
-                'google_translate_element' 
-            );  
-        }  
-    </script>  
-      
-    <script type="text/javascript" src= 
-"https://translate.google.com/translate_a/element.js? 
-        cb=googleTranslateElementInit"> 
-    </script>  
-        <div class="navbar-header">
+	
+	<div class="container">
+	
+        
+	<div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" title="Галоўная">Галоўная</a>
+          <div style="display: inline"><a class="navbar-brand" href="index.html" title="Галоўная">Галоўная</a></div>
+	
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#" data-nav-section="welcome">ПРА МУЗЕЙ</a></li>
+	         
+	  <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="welcome">О МУЗЕЕ</a></li>
             <li><a href="#" data-nav-section="specialties">КАРТА МУЗЕЯ</a></li>
             <li><a href="#" data-nav-section="menu">АНОНСЫ</a></li>
             <li><a href="#" data-nav-section="reservation">ЭКСКУРСІІ</a></li>
             <li><a href="#" data-nav-section="events">ФОТААЛЬБОМ</a></li>
             <li><a href="#" data-nav-section="contact">ПЫТАННЕ ДНЯ / ТЫДНЯ</a></li>
           </ul>
+	
         </div>
+	<div style="margin-top: 15px" id="ytWidget"></div> 
+	<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=ru&widgetTheme=light&autoMode=false" type="text/javascript"></script>
       </div>
     </nav>
 
